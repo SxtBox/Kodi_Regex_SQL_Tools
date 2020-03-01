@@ -7,7 +7,7 @@ mysqli_select_db($conn,"xml_with_sql");
 
 foreach ($xml->item as $row)
 {
-	// SIMPLE XML STRUCTURE
+    // SIMPLE XML STRUCTURE
     $title = $row->title;
     $link = $row->link;
     $thumbnail = $row->thumbnail;
