@@ -10,12 +10,12 @@ foreach ($xml->item->regex as $regex_row)
 {
 // SINGLE XML STRUCTURE
     $title = $row->title;
-	$thumbnail = $row->thumbnail;
-	$fanart = $row->fanart;
+    $thumbnail = $row->thumbnail;
+    $fanart = $row->fanart;
     $link = $row->link;
-	$name = $row->regex->name;
-	$expres = $row->regex->expres;
-	$page = $row->regex->page;
+    $name = $row->regex->name;
+    $expres = $row->regex->expres;
+    $page = $row->regex->page;
 
     $sql = "INSERT INTO `regex_single` (`title`, `thumbnail`, `fanart`, `link`, `name`, `expres`, `page`)
             VALUES('$title', '$thumbnail', '$fanart', '$link', '$name', '$expres', '$page')";
