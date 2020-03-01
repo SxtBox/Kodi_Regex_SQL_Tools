@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<channel>
+<item>
+<title>[COLOR lime][B]RADIO CIDADE[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/cidadefm</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+<item>
+<title>[COLOR lime][B]RADIO COMERCIAL[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/comercial</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+<item>
+<title>[COLOR lime][B]RADIO COMERCIAL[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/comercial.mp3</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+<item>
+<title>[COLOR lime][B]RADIO M80[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/m80</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+<item>
+<title>[COLOR lime][B]RADIO SMOOTH FM[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/smoothfm</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+<item>
+<title>[COLOR lime][B]RADIO VODAFONE FM[/COLOR][/B]</title>
+<link>http://mcrscast4.mcr.iol.pt:80/vodafone</link>
+<thumbnail>https://png.kodi.al/tv/albdroid/black.png</thumbnail>
+<fanart>https://png.kodi.al/tv/albdroid/black.png</fanart>
+<category>Media Capital Radios</category>
+</item>
+
+</channel>
