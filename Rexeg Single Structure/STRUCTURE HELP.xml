@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+
+SEE IN XML_Main_Structure.xml
+
+OPTION 1
+<item>
+<title>YOUR TITLE</title>
+<thumbnail>YOUR IMAGE</thumbnail>
+<fanart>YOUR IMAGE</fanart>
+<link>$doregex[get]</link>
+<regex>
+<name>get</name>
+<expres>YOUR REGEX HERE</expres>
+<page>PAGE TO GET</page>
+</regex>
+</item>
+
+OPTION 2
+<item> <!-- DIRECT LINK -->
+<title>YOUR TITLE</title>
+<thumbnail>YOUR IMAGE</thumbnail>
+<fanart>YOUR IMAGE</fanart>
+<link>YOUR DIRECT LINK HERE</link>
+</item>
+</channel>
