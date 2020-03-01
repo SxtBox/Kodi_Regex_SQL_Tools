@@ -11,17 +11,17 @@ $stmt->execute();
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 {
-	// SINGLE XML STRUCTURE
+    // SINGLE XML STRUCTURE
     $kodi_xml_data .= "\t<item>\n";
     $kodi_xml_data .= "\t\t<title>".$row['title']."</title>\n";
     $kodi_xml_data .= "\t\t<thumbnail>".$row['thumbnail']."</thumbnail>\n";
     $kodi_xml_data .= "\t\t<fanart>".$row['fanart']."</fanart>\n";
     $kodi_xml_data .= "\t\t<link>".$row['link']."</link>\n";
-	$kodi_xml_data .= "\t<regex>\n";
+    $kodi_xml_data .= "\t<regex>\n";
     $kodi_xml_data .= "\t\t<name>".$row['name']."</name>\n";
-	$kodi_xml_data .= "\t\t<expres>".$row['expres']."</expres>\n";
-	$kodi_xml_data .= "\t\t<page>".$row['page']."</page>\n";
-	$kodi_xml_data .= "\t</regex>\n";
+    $kodi_xml_data .= "\t\t<expres>".$row['expres']."</expres>\n";
+    $kodi_xml_data .= "\t\t<page>".$row['page']."</page>\n";
+    $kodi_xml_data .= "\t</regex>\n";
     $kodi_xml_data .= "\t</item>\n";
 }
 
