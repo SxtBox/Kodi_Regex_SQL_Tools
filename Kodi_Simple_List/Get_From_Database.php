@@ -11,7 +11,7 @@ $stmt->execute();
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 {
-		// SIMPLE XML STRUCTURE
+    // SIMPLE XML STRUCTURE
     $kodi_xml_data .= "\t<item>\n";
     $kodi_xml_data .= "\t\t<title>".$row['title']."</title>\n";
     $kodi_xml_data .= "\t\t<link>".$row['link']."</link>\n";
