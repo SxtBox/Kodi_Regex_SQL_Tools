@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<channel> <!-- Demo https://iptv.kodi.al/example.xml  -->
+<item> <!-- THIS IS ONLY EXAMPLE -->
+<title>[COLOR lime][B]Alb Music[/B][/COLOR]</title>
+<thumbnail>kodi.al/****************/albukmuzike.png</thumbnail>
+<fanart>kodi.al/****************/albukmuzike.png</fanart>
+<link>kodi.al/****************/playlist.m3u8</link>
+<genre>[COLOR lime][B][I]Albdroid[/I][/B][/COLOR][COLOR lime][B][I] [COLOR red]([/COLOR]Alb Music[COLOR red])[/I][/B][/COLOR]</genre>
+<info>[COLOR lime][B]Website:[/B][/COLOR] [COLOR red][B]([/B][/COLOR][COLOR lime][B]Albdroid.AL[/B][/COLOR] [COLOR red][B]&amp;[/B][/COLOR] [COLOR lime][B]Kodi.AL[/B][/COLOR][COLOR red][B])[/B][/COLOR]</info>
+<date>[COLOR lime][B]2018[/B][/COLOR]</date>
+</item>
+
+<item> <!-- THIS IS ONLY EXAMPLE -->
+<title>[COLOR lime][B]Balkanika BG[/B][/COLOR]</title>
+<thumbnail>kodi.al/****************/balkanika2.png</thumbnail>
+<fanart>kodi.al/****************/balkanika2.png</fanart>
+<link>$doregex[get-url]|User-Agent=iPad</link>
+<regex>
+<name>get-url</name>
+<expres>$pyFunction:'$doregex[kodi.al]'.replace(kodi.al/****************)</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-m3u8</name>
+<expres>kodi.al/****************/]+)</expres>
+<page>$doregex[get-link]</page>
+<referer>kodi.al/</referer>
+<agent>iPad</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-link</name>
+<expres>unescape\kodi.al</expres>
+<page>$doregex[kodi.al/****************/]</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getStream</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'kodi.al/****************/'):
+ import requests, urllib, re
+ useragent = 'iPad'
+ headers = {'User-Agent': useragent, 'Referer': 'kodi.al/****************/tv', 'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}
+ var1 = requests.get(url, headers = headers).text
+ link = re.findall('tviframe".src="(.*?)"', var1)[0]
+ var2 = requests.get(link, headers = headers).text
+ escape = re.findall('unescape\(\'(.*?)\'', var2)[0]
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<genre>[COLOR lime][B][I]Albdroid[/I][/B][/COLOR][COLOR lime][B][I] [COLOR red]([/COLOR]Balkanika Bullgaria[COLOR red])[/I][/B][/COLOR]</genre>
+<info>[COLOR lime][B]Website:[/B][/COLOR] [COLOR red][B]([/B][/COLOR][COLOR lime][B]Albdroid.AL[/B][/COLOR] [COLOR red][B]&amp;[/B][/COLOR] [COLOR lime][B]Kodi.AL[/B][/COLOR][COLOR red][B])[/B][/COLOR]</info>
+<date>[COLOR lime][B]2018[/B][/COLOR]</date>
+</item>
+</channel>

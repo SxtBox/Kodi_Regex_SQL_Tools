@@ -1,0 +1,17 @@
+{
+   "NRJ Radios": [
+      {
+         "id": "1",
+         "typ": "Radio",
+         "name": "Energy Balkan Hits",
+         "shortname": "energybalkanhits",
+         "new_shortname": "energybalkanhits",
+         "stream_url": "kodi.al/****************energybalkanhits-high.mp3",
+         "premium_stream_url": "kodi.al/****************energybalkanhits-high.mp3",
+         "logo": "kodi.al/****************NRJ_Special_BalkanHits.png",
+         "group_name": "Special",
+         "tags": [],
+         "playlist": "http://localhost/json_tester/data/example.json"
+      }
+   ]
+}
